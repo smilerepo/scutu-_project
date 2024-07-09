@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike Management</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bikeapp/styles.css' %}">
+</head>
+<body>
+    <h1>Welcome to Bike Management System</h1>
+    <a href="{% url 'bikes-list' %}">View Bikes</a>
+    <a href="{% url 'riders-list' %}">View Riders</a>
+    <a href="{% url 'bikeallotments-list' %}">View Bike Allotments</a>
+    <a href="{% url 'payments-list' %}">View Payments</a>
+</body>
+</html>

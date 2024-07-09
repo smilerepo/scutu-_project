@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bikeapp/styles.css' %}">
+</head>
+<body>
+    <h1>Bike List</h1>
+    <ul>
+        {% for bike in bikes %}
+            <li>{{ bike.name }} - {{ bike.model }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'index' %}">Back to Home</a>
+</body>
+</html>
